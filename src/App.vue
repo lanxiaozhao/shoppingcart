@@ -1,28 +1,34 @@
+<!--
+ * @Descripttion:
+ * @version:
+ * @Author: zhaopan
+ * @Date: 2020-07-14 19:59:29
+ * @LastEditors: zhaopan
+ * @LastEditTime: 2020-07-14 20:36:28
+-->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>VUEX购物车</h1>
+    <product></product>
+    <cart></cart>
+    <info></info>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import product from './components/product'
+import cart from './components/cart'
+import info from './components/info'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    product,
+    cart,
+    info
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
